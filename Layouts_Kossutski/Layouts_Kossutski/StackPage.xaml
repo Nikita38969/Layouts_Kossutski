@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts_Kossutski.StackPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl" 
+                Text="Nupp!"
+                HorizontalOptions="CenterAndExpand"  />
+            <StackLayout Orientation="Vertical">
+                <Button x:Name="btn" Text="Vajuta siia"
+                    BackgroundColor="Green"
+                    BorderColor="YellowGreen"
+                    BorderWidth="7"
+                    FontSize="Medium"
+                    Clicked="btn_Clicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start">
+                </Button>
+                <Button x:Name="btn1" Text="0"
+                    BackgroundColor="Red"
+                    BorderColor="Yellow"
+                    BorderWidth="7"
+                    FontSize="Medium"
+                    Clicked="btn1_Clicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="EndAndExpand">
+                </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
